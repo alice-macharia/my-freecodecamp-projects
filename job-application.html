@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="job-application.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Job Application</h1>
+            <p>Apply for your preferred position below.</p>
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="position">Job Position</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="fronted">Fronted Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="designer">UI/UX Designer</option>
+                <option value="manager">Project Manager</option>
+            </select>
+            
+<fieldset class="radio-group">
+  <legend>Availability</legend>
+
+  <input type="radio" id="full-time" name="availability" value="full-time">
+  <label for="full-time">Full-Time</label>
+
+  <input type="radio" id="part-time" name="availability" value="part-time">
+  <label for="part-time">Part-Time</label>
+
+  <input type="radio" id="internship" name="availability" value="internship">
+  <label for="internship">Internship</label>
+</fieldset>
+
+            <label for="message">Why should we hire you?
+            </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>

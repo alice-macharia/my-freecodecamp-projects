@@ -1,0 +1,57 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #264653;
+  margin-bottom: 30px;
+}
+
+.feature-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 25px;
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #264653;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+}
+
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+}
